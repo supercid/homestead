@@ -13,7 +13,9 @@ echo 'exec zsh' >> ~/.bashrc
 sudo apt-get install mcrypt php7.1-mcrypt  -yqq
 sudo apt-get install php7.1-intl -yqq
 sudo apt-get install php7.1-xsl -yqq
+sudo apt-get install php-ast -yqq
 sudo a2dismod php7.2
 sudo a2enmod php7.1
+composer require colinmollenhour/modman
 sudo service apache2 restart
 sudo update-alternatives --set php /usr/bin/php7.1
